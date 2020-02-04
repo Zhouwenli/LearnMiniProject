@@ -1,6 +1,39 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
-  ]
+    "pages/about/about",
+    "pages/category/category",
+    "pages/search/search"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#3293ea",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "银盛靓号平台",
+    "backgroundColor": "#efefef",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "selectedColor": "#3293ea",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "assets/tabbar/home-icon.png",
+        "selectedIconPath": "assets/tabbar/home-icon-active.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索号码",
+        "iconPath": "assets/tabbar/search-icon.png",
+        "selectedIconPath": "assets/tabbar/search-icon-active.png"
+      },
+      {
+        "pagePath": "pages/category/category",
+        "text": "导航",
+        "iconPath": "assets/tabbar/search-icon.png",
+        "selectedIconPath": "assets/tabbar/search-icon-active.png"
+      }
+    ]
+  }
 }

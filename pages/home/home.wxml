@@ -1,2 +1,10 @@
 <!--pages/home/home.wxml-->
-<text>Hello world</text>
+<!--1.小程序的数据绑定 {{}}-->
+<view>Hello {{name}}</view>
+<view>my {{age}}</view>
+<!--2.数据列表渲染-->
+<view wx:for="{{students}}">{{item.name}}</view>
+<!--3.事件监听改变data-->
+<view>当前事件监听:{{counter}}</view>
+<button bindtap="handleClick">点击增加</button>
+<text class="iconfont iconinput-search-icon"></text>
