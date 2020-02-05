@@ -1,1 +1,11 @@
 /* pages/home/home.wxss */
+.demo-text-1{
+  background-color: #3293ea;
+}
+.demo-text-2,.demo-text-3{
+  background-color: red;
+}
+.swiper-item{
+  width: 100%;
+  height: 100%;
+}

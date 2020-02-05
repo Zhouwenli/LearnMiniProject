@@ -1,10 +1,14 @@
-<!--pages/home/home.wxml-->
-<!--1.小程序的数据绑定 {{}}-->
-<view>Hello {{name}}</view>
-<view>my {{age}}</view>
-<!--2.数据列表渲染-->
-<view wx:for="{{students}}">{{item.name}}</view>
-<!--3.事件监听改变data-->
-<view>当前事件监听:{{counter}}</view>
-<button bindtap="handleClick">点击增加</button>
-<text class="iconfont iconinput-search-icon"></text>
+<view class="content">
+   <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}" indicator-active-color="#fff"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+         <block wx:for="{{bannarImg}}" wx:key="index">
+          <swiper-item>
+            <image class="swiper-item" src="{{item}}"/>
+          </swiper-item>
+          </block>
+      </swiper>
+    </view>
+  </view>
+</view>

@@ -11,7 +11,7 @@
     "navigationBarTitleText": "银盛靓号平台",
     "backgroundColor": "#efefef",
     "backgroundTextStyle": "light",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": false
   },
   "tabBar": {
     "selectedColor": "#3293ea",
@@ -35,5 +35,6 @@
         "selectedIconPath": "assets/tabbar/search-icon-active.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap92.json"
 }
