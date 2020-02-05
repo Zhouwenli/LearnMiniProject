@@ -1,2 +1,6 @@
 <!--components/barner/banner.wxml-->
-<text>components/barner/banner.wxml</text>
+<view class="container">
+  <block  wx:for="{{titles}}" wx:key="index">
+    <view class="item {{currentIndex==index?'active':''}}" bind:tap="handleClick" data-index="{{index}}">{{item}}</view>
+  </block>
+</view>

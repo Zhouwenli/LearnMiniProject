@@ -11,4 +11,5 @@
       </swiper>
     </view>
   </view>
+  <banner titles="{{titles}}" bind:itemclick="handleItemClick"/>  
 </view>

@@ -1,1 +1,17 @@
 /* components/barner/banner.wxss */
+.container{
+  width: 100%;
+  height: 100rpx;
+  background-color: rgb(238, 96, 13);
+  margin-top: 20rpx;
+  display: flex;
+  line-height: 100rpx;
+}
+.container .item{
+  flex: 1;
+  text-align: center;
+}
+.container .item.active{
+  color: #3293ea;
+  border-bottom: 6rpx solid #3293ea;
+}
