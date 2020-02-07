@@ -1,4 +1,5 @@
 // pages/home/home.js
+import request from '../../service/network.js'
 Page({
 
   /**
@@ -11,5 +12,14 @@ Page({
     autoplay: true,
     interval: 2000,
     duration: 500
+  },
+  onLoad:function(options){
+    request({
+      url:'http://lh.mall.padmins.com/api/shop/mobilecard/hotSummary'
+    }).then(res =>{
+      console.log(res)
+      }).catch(err =>{
+      console.log(err)
+    })
   }
 })
