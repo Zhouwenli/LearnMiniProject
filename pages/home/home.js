@@ -1,5 +1,5 @@
 // pages/home/home.js
-import request from '../../service/network.js'
+import {index} from '../../service/home.js'
 Page({
 
   /**
@@ -14,12 +14,17 @@ Page({
     duration: 500
   },
   onLoad:function(options){
-    request({
-      url:'http://lh.mall.padmins.com/api/shop/mobilecard/hotSummary'
-    }).then(res =>{
+   index().then(res =>{
       console.log(res)
       }).catch(err =>{
       console.log(err)
     })
+  },
+  //分享小程序，没有这个函数不能分享
+  onShareAppMessage:function(options){
+    return{
+      title:'你好小可爱，进来看看',
+      imageUrl:'/assets/bannar/1.jpg'
+    }
   }
 })
